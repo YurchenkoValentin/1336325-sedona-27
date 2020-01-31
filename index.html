@@ -87,13 +87,20 @@
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br> 
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <p>Поиск гостиницы в Седоне</p>
-        <p>Дата заезда:</p>
-        <p>Дата выезда:</p>
-        <p>Взрослые:</p>
-        <p>Дети:</p>
-        <button type="submit">Найти</button>
-        <!-- Здесь будут формы -->
+        <form action="#" method="GET">
+          <h3>Поиск гостиницы в Седоне</h3> <!-- мне кажется, здесь должен быть заголовок -->
+          <fieldset>
+            <label for="date">Дата заезда:</label>
+            <input type="date" id="date" placeholder="24 апреля 2017"><br>
+            <label for="date">Дата выезда:</label>
+            <input type="date" id="date" placeholder="4 июля 2017"><br>
+            <label for="number">Взрослые:</label>
+            <input type="number" id="number" placeholder="0">
+            <label for="number">Дети:</label>
+            <input type="number" id="number" placeholder="0">
+          </fieldset>
+          <input type="submit" value="найти">
+        </form>
       </section>
     </main>
 
