@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+  
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+
+    background-color: #f2f2f2;
+    background-image: url("../img/background.jpg");
+    background-size: 1200px 800px;
+    margin-top: 45px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 1917px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    }
+    
+
+    a {
+    text-decoration: none;
+    }
+
+    .main-navigation {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        color: black;
+        /* background-color: #f2f2f2 1200px 56px; */
+    }
+
+    .site-navigation {
+        list-style: none;
+    }
+
+    .site-navigation a {
+        color: black;
+    }
+
+    .information:hover {
+        color: #81b3d2;
+    }
+
+    .information:active {
+        color: rgba(0, 0, 0, 0.3);
+    }
+
+    .information,
+    .active {
+        color: #766357;
+        text-align: 112px 22px;
+    }
+
+    .sedona-about {
+        background-color: #f2f2f2;
+    }
+
+    p.sedona-info {
+        font-weight: bold;
+        font-size: 21px;
+        text-align: center;
+    }
+
+    p.reason {
+        color: #333333;
+        text-align: center;
+    }
+
+    h2.attention {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    p.date-text {
+        line-height: 24px;
+        color: #333333;
+        text-align: center;
+    }
+
+    .button {
+        font-weight: bold;
+        font-size: 21px;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+
+        width: 568px;
+        height: 86px;
+        margin-left: 316px;
+        margin-top: 52px;
+        background-color: #766357;
+        border: none;
+    }
+
+    .form {
+        background: white;
+        width: 568px;
+        height: 395px;
+        margin-left: 316px;
+    }
+
+    .field {
+        border: none;
+    }
+
+    .check-in {
+        font-weight: bold;
+        margin-top: 169px;
+        margin-left: 55px;
+        margin-right: 322px;
+    }
+    
+    /* .header-logo {
+        margin-left: 569px;
+        margin-right: 571px;
+        margin-top: 0;
+    } */

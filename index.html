@@ -2,18 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="index.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
 
   <body>
     <header>
-      <nav>
-        <a>
+      <nav class="main-navigation">
+        <a class="header-logo">
           <img src="img/header-logo.svg" width="100" height="150" alt="Логотип города Седона">
         </a>
-        <ul>
-          <li><a href="info.html">Информация</a></li>
+        <ul class="site-navigation">
+          <li><a class="information active" href="info.html">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li> <!-- карта поп-апом? -->
           <li><a href="hotels.html">Гостиницы</a></li>
@@ -22,16 +23,10 @@
     </header>
 
     <main>
-      <section>
-        <div>
-          <img src="img/background.jpg" alt="Фоновое изображение">
-        </div>
-      </section> 
-
-        <section>
-          <p>Седона - небольшой городок в Аризоне,
+      <section class="sedona-about">
+        <p class="sedona-info">Седона - небольшой городок в Аризоне,
             заслуживающий большего!</p> 
-            <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p> 
+        <p class="reason">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p> 
       </section>
 
       <section>
@@ -84,14 +79,14 @@
       </section>
       
       <section>
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,<br> 
+        <h2 class="attention">Заинтересовались?</h2>
+        <p class="date-text">Укажите предполагаемые даты поездки,<br> 
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button type="button" value="кнопка">Поиск гостиницы в Седоне</button> 
-        <form action="#" method="GET">
-          <fieldset>
-            <label for="date">Дата заезда:</label>
-            <input type="text" id="date" placeholder="24 апреля 2017"><br>
+        <button class="button" type="button" value="кнопка">Поиск гостиницы в Седоне</button> 
+        <form class="form" action="#" method="GET">
+          <fieldset class="field">
+            <label class="check-in"for="date">Дата заезда:</label>
+            <input class="check-in-date" type="text" id="date" placeholder="24 апреля 2017"><br>
             <label for="date">Дата выезда:</label>
             <input type="text" id="date" placeholder="4 июля 2017"><br>
             <label for="number">Взрослые:</label>
@@ -114,7 +109,7 @@
             <li>
               <a href="#">
                 <img src="img/t-icon.png" alt="Твиттер" width="115" height="77">
-              </a> <!-- иконки не видно в браузере -->
+              </a> 
             </li>
             <li>
               <a href="#"><img src="img/fb-icon.svg" alt="Фейсбук" width="115" height="77"></a>
