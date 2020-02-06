@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
 
@@ -14,115 +15,126 @@
           <img src="img/header-logo.svg" width="100" height="150" alt="Логотип города Седона">
         </a>
         <ul class="site-navigation">
-          <li><a class="information active" href="info.html">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li> <!-- карта поп-апом? -->
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li class="site-navigation-element-info"><a class="site-navigation-information active" href="info.html">Информация</a></li>
+          <li class="site-navigation-element-photo"><a href="#">Фото и видео</a></li>
+          <li class="site-navigation-element-map"><a href="#">Карта штата</a></li> 
+          <li class="site-navigation-element-hotels"><a class="site-navigation-hotels" href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main class="main">
       <section class="sedona-about">
-        <p class="sedona-info">Седона - небольшой городок в Аризоне,
+        <p class="sedona-about-info-text">Седона - небольшой городок в Аризоне,
             заслуживающий большего!</p> 
-        <p class="reason">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p> 
+        <p class="sedona-about-reasons">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p> 
       </section>
 
-      <section>
-        <ul>
-          <li>
-            <h3>Настоящий
+      <section class="advantage">
+        <ul class="advantage-list">
+          <li class="advantage-1">
+            <h3 class="advantage-1-header">Настоящий
               городок</h3>
             <span>№1</span>
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <p class="advantage-1-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
-          <ul>
-            <li>
-              <h3>Жилье</h3>
-              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <ul class="reason-list">
+            <li class="reason-1">
+              <h3 class="rason-1-header">Жилье</h3>
+              <p class="reason-1-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li>
-              <h3>Еда</h3>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
+            <li class="reason-2">
+              <h3 class="reason-2-header">Еда</h3>
+              <p class="reason-2-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
             </li>
-            <li>
-              <h3>Сувениры</h3>
-              <p>Не только китайского, но и местного производства</p>
+            <li class="reason-3">
+              <h3 class="reason-3-header">Сувениры</h3>
+              <p class="reason-2-text">Не только китайского, но и местного производства</p>
             </li>
           </ul>
-          <li>
-            <h3>Там есть<br>
+          <li class="advantage-2">
+            <h3 class="advantage-2-header">Там есть<br>
               мост дьявола</h3>
             <span>№2</span>
-            <p>Да, по нему можно пройти!Если конечно вы осмелитесь</p>
+            <p class="advantage-2-text">Да, по нему можно пройти!Если конечно вы осмелитесь</p>
           </li>
-          <li>
-            <h3>Небольшая
-              площадь</h3>
+          <li class="advantage-3">
+            <h3 class="advantage-3-header">Небольшая площадь</h3>
             <span>№3</span>
-            <p>Все достопримечательности находятся очень близко</p>
+            <p class="advantage-3-text">Все достопримечательности находятся очень близко</p>
           </li>
-          <li>
-            <h3>Красивая
+          <li class="advantage-4">
+            <h3 class="advantage-4-header">Красивая
               дорога</h3>
             <span>№4</span>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="advantage-4-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li>
-            <h3>Мало
+          <li class="advantage-5">
+            <h3 class="advantage-5-header">Мало
               туристов</h3>
             <span>№5</span>
-            <p>Большинство едет в гранд каньон и толпится там</p>
+            <p class="advantage-5-text">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
       </section>
       
-      <section>
-        <h2 class="attention">Заинтересовались?</h2>
-        <p class="date-text">Укажите предполагаемые даты поездки,<br> 
-        и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <section class="reservation">
+        <h2         class="reservation-attention-header">Заинтересовались?</h2>
+        <p class="reservation-date-text">Укажите предполагаемые даты поездки,<br> 
+        и мы покажем вам лучшие предложения гостиниц в седоне
+        </p>
         <button class="button" type="button" value="кнопка">Поиск гостиницы в Седоне</button> 
         <form class="form" action="#" method="GET">
-          <fieldset class="field">
-            <label class="check-in"for="date">Дата заезда:</label>
-            <input class="check-in-date" type="text" id="date" placeholder="24 апреля 2017"><br>
-            <label for="date">Дата выезда:</label>
-            <input type="text" id="date" placeholder="4 июля 2017"><br>
-            <label for="number">Взрослые:</label>
-            <input type="text" id="number" placeholder="0">
-            <label for="number">Дети:</label>
-            <input type="text" id="number" placeholder="0">
+          <fieldset class="booking">
+            <label class="booking-check-in"for="date">Дата заезда:</label>
+            <input class="booking-check-in-date" type="text" id="date" placeholder="24 апреля 2017">
+            <label class="booking-check-out" for="date">Дата выезда:</label>
+            <input class="booking-check-out-date" type="text" id="date" placeholder="4 июля 2017">
+            <label class="booking-adults" for="number">Взрослые:</label>
+            <input class="booking-adults-quantity" type="text" id="number" placeholder="0">
+            <label class="booking-kids"for="number">Дети:</label>
+            <input class="booking-kids-quantity" type="text" id="number" placeholder="0">
           </fieldset>
-          <button type="submit" value="кнопка">Найти</button>
+          <button type="submit">Найти</button>
         </form>
       </section>
     </main>
 
-      <footer>
-        <p>
-          #visitsedona
-          Тел: 
-        <a href="tel:+74956660266">+7(495) 666-02-66</a>
+      <footer class="footer">
+        <div class="footer-contacts">
+          <p class="footer-hashtag">
+            #visitsedona
+          </p>
+          <p class="footer-phone">
+            Тел: 
+            <a class="footer-phone-number" href="tel:+74956660266">+7(495) 666-02-66</a>
+          </p>
+        </div>
+        <ul class="footer-social"> 
+          <li class="footer-social-twitter">
+            <a class="footer-social-twitter-link" href="#">
+              <img class="twitter-icon" src="img/t-icon.svg" alt="Twitter">
+            </a> 
+          </li>
+          <li class="footer-social-facebook">
+            <a class="footer-social-facebook-link" href="#">
+              <img class="fb-icon" src="img/fb-icon.svg" alt="Facebook">
+              </a>
+          </li>
+          <li class="footer-social-youtube">
+            <a class="footer-social-youtube-link" href="#">
+            <img class="youtube-icon" src="img/youtube-icon.svg" alt="Youtube">
+            </a>
+          </li>
+        </ul>
+        <p class="developed-text">
+          website by: 
         </p>
-          <ul> 
-            <li>
-              <a href="#">
-                <img src="img/t-icon.png" alt="Твиттер" width="115" height="77">
-              </a> 
-            </li>
-            <li>
-              <a href="#"><img src="img/fb-icon.svg" alt="Фейсбук" width="115" height="77"></a>
-            </li>
-            <li>
-            <a href="#"><img src="img/youtube-icon.svg" alt="Инстаграм" width="115" height="77"></a>
-            </li>
-          </ul>
-        <p>
-          Разработано: 
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/footer_logo.svg" width="100" height="150" alt="HTML Academy">HTML Academy</a> <!-- Не отображается логотип -->
-        </p>
+        <div class="html-academy-img"> 
+          <a class="developed-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img class="html-academy-logo" src="img/footer-logo.svg" alt="HTML Academy">
+          </a> <!-- Не отображается логотип -->
+        </div>
       </footer>
   </body>
 </html>

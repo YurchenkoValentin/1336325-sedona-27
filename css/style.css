@@ -1,23 +1,23 @@
-body {
-    margin: 0;
-    padding: 0;
-  
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 700;
-    color: black;
-    text-transform: uppercase;
+    body {
+        margin: 0;
+        padding: 0;
+    
+        font-family: "PT Sans", Arial, sans-serif;
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: bold;
+        color: black;
+        text-transform: uppercase;
 
-    background-color: #f2f2f2;
-    background-image: url("../img/background.jpg");
-    background-size: 1200px 800px;
-    margin-top: 45px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 1917px;
-    background-position: top center;
-    background-repeat: no-repeat;
+        background-color: #f2f2f2;
+        background-image: url("../img/background.jpg");
+        background-size: 1200px 800px;
+        margin-top: 45px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 1917px;
+        background-position: top center;
+        background-repeat: no-repeat;
     }
     
 
@@ -41,15 +41,15 @@ body {
         color: black;
     }
 
-    .information:hover {
+    .site-navigation-information:hover {
         color: #81b3d2;
     }
 
-    .information:active {
+    .site-navigation-information:active {
         color: rgba(0, 0, 0, 0.3);
     }
 
-    .information,
+    .site-navigation-information,
     .active {
         color: #766357;
         text-align: 112px 22px;
@@ -59,25 +59,25 @@ body {
         background-color: #f2f2f2;
     }
 
-    p.sedona-info {
+    .sedona-about-info-text {
         font-weight: bold;
         font-size: 21px;
         text-align: center;
     }
 
-    p.reason {
+    .sedona-about-reasons {
         color: #333333;
         text-align: center;
     }
 
-    h2.attention {
+    .reservation-attention-header {
         font-weight: bold;
         font-size: 30px;
         line-height: 36px;
         text-align: center;
     }
 
-    p.date-text {
+    .reservation-date-text {
         line-height: 24px;
         color: #333333;
         text-align: center;
@@ -105,7 +105,7 @@ body {
         margin-left: 316px;
     }
 
-    .field {
+   /*  .field {
         border: none;
     }
 
@@ -114,10 +114,135 @@ body {
         margin-top: 169px;
         margin-left: 55px;
         margin-right: 322px;
-    }
+    } */
     
     /* .header-logo {
         margin-left: 569px;
         margin-right: 571px;
         margin-top: 0;
     } */
+
+    .footer-contacts {
+        font-size: 21px;
+        margin-left: 132px;
+    }
+
+    .footer-social {
+        list-style: none;
+    }
+
+    .twitter-icon {
+        width: 17;
+        height: 15;
+        object-fit: contain;
+    }
+
+    .footer-social-twitter {
+        background-color: #81b3d2; 
+        max-width: 46px; 
+        height: 48px;
+    }
+
+    .fb-icon {
+        width:12;
+        height:22;
+        object-fit: contain;
+    }
+
+    .footer-social-facebook {
+        background-color: #81b3d2; 
+        max-width: 46px; 
+        height: 48px;
+    }
+
+    .youtube-icon {
+        width:20;
+        height:16;
+        object-fit: contain;
+    }
+
+    .footer-social-youtube {
+        background-color: #81b3d2; 
+        max-width: 46px; 
+        height: 48px;
+    } /* не получилось оформить иконки */
+
+    .developed-text {
+        margin-left: 902px;
+    }
+
+    .html-academy-logo {
+        width: 115px;
+        height: 41px;
+        object-fit: contain;
+        margin-right: 101px;
+    }
+
+    .search-result {
+        font-size: 21px;
+    }
+
+    .sorting {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .site-navigation-element-hotels-active {
+        color:#766357; /* на странице отелей элемент должен быть другого цвета (цвет не поменялся) */
+    }
+
+    .hotels-data-amara-link {
+        color: black;
+    }
+
+    .hotels-data-amara-link:hover {
+        color: #81b3d2;
+    }
+
+    .hotels-data-amara-link:active {
+        color: rgba(0, 0, 0, 0.3);
+    }
+    .hotel-type,
+    .hotel-price
+    {
+        font-weight: normal;
+        line-height: 21px;
+        color: #333333;
+    }
+
+    .hotel-information {
+        line-height: 21px;
+        color: white;
+        background-color: #81b3d2;
+    }
+
+    .hotel-information:hover {
+        background-color: #669ec0;
+    }
+
+    .hotel-information:active {
+        color: rgba(255, 255, 255, 0.3);
+        background-color: #5496bd;
+    }
+
+    .hotel-booking {
+        line-height: 21px;
+        color: white;
+        background-color: #766357;
+    }
+
+    .hotel-booking:hover {
+        background-color: #604e43;
+    }
+
+    .hotel-booking:active {
+        color: rgba(255, 255, 255, 0.3);
+        background-color: #503e33;
+    }
+
+    .hotel-rating {
+        line-height: 21px;
+        color: #666666;
+        background-color: #f2f2f2;
+    }
