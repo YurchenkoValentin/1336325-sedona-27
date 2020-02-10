@@ -257,3 +257,41 @@
         color: #666666;
         background-color: #f2f2f2;
     }
+
+    .main-navigation {
+        outline: darkblue solid 3px;
+    }
+
+    .sedona-about-info-text {
+        outline: blueviolet solid 3px;
+    }
+
+    .main {
+        outline: aqua solid 3px;
+    }
+
+    .sedona-about-reasons {
+        outline: crimson solid 3px;;
+    }
+   
+    .advantage-list {
+        list-style: none;
+        outline: darkgoldenrod solid 3px;
+    }
+
+    .reason-list {
+        list-style: none;
+        outline: lime solid 3px;
+    }
+
+    .reservation {
+        outline: fuchsia solid 3px;
+    }
+
+    .booking-form {
+        outline: gold solid 3px;
+    }
+
+    footer {
+        outline: green solid 3px;
+    }
