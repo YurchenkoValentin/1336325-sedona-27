@@ -35,14 +35,15 @@
 
     .site-navigation {
         list-style: none;
+        display: flex;
+        justify-content: space-around;
     }
 
     .site-navigation a {
         color: black;
     }
 
-    .site-navigation-link, 
-    .information:hover {
+    .site-navigation-link:hover {
         color: #81b3d2;
     }
 
@@ -50,10 +51,9 @@
         color: rgba(0, 0, 0, 0.3);
     }
 
-    .site-navigation-link,
-    .active {
+    .site-navigation-link .active {
         color: #766357;
-        text-align: 112px 22px;
+        text-align: 112px 22px; 
     }
 
     .sedona-about {
@@ -71,20 +71,20 @@
         text-align: center;
     }
 
-    .reservation-attention-header {
+    .reservation-attention-title {
         font-weight: bold;
         font-size: 30px;
         line-height: 36px;
         text-align: center;
     }
 
-    .reservation-date-text {
+    .reservation-text {
         line-height: 24px;
         color: #333333;
         text-align: center;
     }
 
-    .button {
+    .reservation-button {
         font-weight: bold;
         font-size: 21px;
         text-align: center;
@@ -99,16 +99,16 @@
         border: none;
     }
 
-    .button:hover {
+    .reservation-button:hover {
         background-color: #604e43;
     }
 
-    .button:active {
+    .reservation-button:active {
         color: rgba(255, 255, 255, 0.3);
         background-color: #503e33;
     }
 
-    .button-search {
+    .booking-form-submit-button {
         font-weight: bold;
         font-size: 21px;
         text-align: center;
@@ -124,16 +124,16 @@
         border: none;
     }
 
-    .button-search:hover {
+    .booking-form-submit-button:hover {
         background-color: #669ec0;
     }
 
-    .button-search:active {
+    .booking-form-submit-button:active {
         color: rgba(255, 255, 255, 0.3);
         background-color: #5496bd;
     }
 
-    .form {
+    .booking-form {
         background: white;
         width: 568px;
         height: 395px;
@@ -162,45 +162,21 @@
         margin-left: 132px;
     }
 
-    .footer-social {
+    .social-item {
         list-style: none;
     }
 
-    .twitter-icon {
+    .social {
+        background-color: #81b3d2; 
+        max-width: 46px; 
+        height: 48px;
+    }
+
+    .social-img {
         width: 17;
         height: 15;
         object-fit: contain;
     }
-
-    .footer-social-twitter {
-        background-color: #81b3d2; 
-        max-width: 46px; 
-        height: 48px;
-    }
-
-    .fb-icon {
-        width:12;
-        height:22;
-        object-fit: contain;
-    }
-
-    .footer-social-facebook {
-        background-color: #81b3d2; 
-        max-width: 46px; 
-        height: 48px;
-    }
-
-    .youtube-icon {
-        width:20;
-        height:16;
-        object-fit: contain;
-    }
-
-    .footer-social-youtube {
-        background-color: #81b3d2; 
-        max-width: 46px; 
-        height: 48px;
-    } /* не получилось оформить иконки */
 
     .developed-text {
         margin-left: 902px;
