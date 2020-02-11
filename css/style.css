@@ -56,6 +56,40 @@
         text-align: 112px 22px; 
     }
 
+    .hotels-data-criteria {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .hotels-data-price {
+        color: #81b3d2;
+    }
+
+    .hotels-data-type,
+    .hotels-data-rating {
+        color: rgba(0, 0, 0, 0.3);
+        border-bottom: dotted 1px #81b3d2; 
+    }
+
+    .hotels-data-type:hover,
+    .hotels-data-rating:hover {
+        color: #81b3d2;
+    }
+
+    .hotels-data-type:active,
+    .hotels-data-rating:active {
+        color: black;
+        border-bottom: none;
+    }
+
+   
+
+
+
+
+
+
     .sedona-about {
         background-color: #f2f2f2;
     }
@@ -67,8 +101,27 @@
     }
 
     .sedona-about-reasons {
+        font-weight: normal;
         color: #333333;
         text-align: center;
+    }
+
+    .advantage-item.white {
+        color: white;
+    }
+
+    .advantage-number,
+    .advantage-text {
+        font-weight: normal;
+    }
+
+    .reason-text,
+    .reservation-text {
+        font-weight: normal;
+    }
+
+    .developed-text {
+        font-weight: normal;
     }
 
     .reservation-attention-title {
@@ -203,15 +256,20 @@
         color:#766357; /* на странице отелей элемент должен быть другого цвета (цвет не поменялся) */
     }
 
-    .hotels-data-amara-link {
+    .hotels-data-list {
+        list-style: none;
+    }
+
+    .hotels-data-link,
+    .hotels-data-link:visited{
         color: black;
     }
 
-    .hotels-data-amara-link:hover {
+    .hotels-data-link:hover {
         color: #81b3d2;
     }
 
-    .hotels-data-amara-link:active {
+    .hotels-data-link:active {
         color: rgba(0, 0, 0, 0.3);
     }
     .hotel-type,
@@ -253,6 +311,7 @@
     }
 
     .hotel-rating {
+        font-weight: normal;
         line-height: 21px;
         color: #666666;
         background-color: #f2f2f2;

@@ -5,6 +5,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
 
@@ -15,10 +16,10 @@
           <img src="img/header-logo.svg" width="100" height="150" alt="Логотип города Седона">
         </a>
         <ul class="site-navigation">
-          <li class="site-navigation-link"><a class="site-navigation-link" href="info.html">Информация</a></li>
-          <li class="site-navigation-link"><a class="site-navigation-link" href="#">Фото и видео</a></li>
-          <li class="site-navigation-link"><a class="site-navigation-link" href="#">Карта штата</a></li> 
-          <li class="site-navigation-link"><a class="site-navigation-link" href="hotels.html">Гостиницы</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="info.html">Информация</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="#">Фото и видео</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="#">Карта штата</a></li> 
+          <li class="site-navigation-item"><a class="site-navigation-link" href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -32,7 +33,7 @@
 
       <section class="advantage">
         <ul class="advantage-list">
-          <li class="advantage-item">
+          <li class="advantage-item white">
             <h3 class="advantage-title">Настоящий
               городок</h3>
             <span class="advantage-number">№1</span>
@@ -52,7 +53,7 @@
               <p class="reason-text">Не только китайского, но и местного производства</p>
             </li>
           </ul>
-          <li class="advantage-item">
+          <li class="advantage-item white">
             <h3 class="advantage-title">Там есть<br>
               мост дьявола</h3>
             <span class="advantage-number">№2</span>
@@ -89,12 +90,20 @@
           <input class="booking-check-in-date" type="text" id="date" placeholder="24 апреля 2017">
           <label class="booking-form-label" for="date">Дата выезда:</label>
           <input class="booking-check-out-date" type="text" id="date" placeholder="4 июля 2017">
-          <label class="booking-form-label" for="number">Взрослые:</label>
-          <input class="booking-adults-quantity" type="text" id="number" placeholder="0">
-          <label class="booking-form-label"for="number">Дети:</label>            
-          <input class="booking-kids-quantity" type="text" id="number" placeholder="0">
+          <div class="">
+            <label class="booking-form-label" for="number">Взрослые:</label>
+            <input class="booking-adults-quantity" type="text" id="number" placeholder="0">
+            <button class="booking-form-button" type="button">-</button> 
+            <button class="booking-form-button" type="button">+</button> 
+          </div>
+          <div class=""> 
+            <label class="booking-form-label"for="number">Дети:</label>            
+            <input class="booking-kids-quantity" type="text" id="number" placeholder="0">
+            <button class="booking-form-button" type="button">-</button> 
+            <button class="booking-form-button" type="button">+</button> 
+          </div>
           <button class="booking-form-submit-button" type="submit">Найти</button>
-          <button class="booking-form-button" type="button"></button> <!-- Как расположить кнопку, чтобы она изменяла количество?  -->
+          <div class="quantity-form-button-children">
         </form>
       </section>
     </main>
