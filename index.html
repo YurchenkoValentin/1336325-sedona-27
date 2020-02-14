@@ -12,9 +12,9 @@
   <body>
     <header>
       <nav class="main-navigation">
-        <a class="header-logo">
+       <!--  <a class="header-logo">
           <img src="img/header-logo.svg" width="100" height="150" alt="Логотип города Седона">
-        </a>
+        </a> -->
         <ul class="site-navigation">
           <li class="site-navigation-item"><a class="site-navigation-link" href="info.html">Информация</a></li>
           <li class="site-navigation-item"><a class="site-navigation-link" href="#">Фото и видео</a></li>
@@ -25,6 +25,11 @@
     </header>
 
     <main class="main">
+
+      <div class="index-logo">
+        <img src="/img/welcome.svg" alt="Добро пожаловать в Седону" width="459px" height="353px">
+      </div>
+
       <section class="sedona-about">
         <p class="sedona-about-info-text">Седона - небольшой городок в Аризоне,
             заслуживающий большего!</p> 
@@ -33,49 +38,57 @@
 
       <section class="advantage">
         <ul class="advantage-list">
-          <li class="advantage-item white">
-            <h3 class="advantage-title">Настоящий
-              городок</h3>
-            <span class="advantage-number">№1</span>
-            <p class="advantage-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          </li>
-          <ul class="reason-list">
-            <li class="reason">
-              <h3 class="reason-header">Жилье</h3>
-              <p class="reason-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <div class="item-container">
+            <li class="advantage-item white">
+              <h3 class="advantage-title">Настоящий
+                городок</h3>
+              <span class="advantage-number">№1</span>
+              <p class="advantage-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </li>
-            <li class="reason">
-              <h3 class="reason-header">Еда</h3>
-              <p class="reason-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
+          </div>
+          <div class="reason-container">
+            <ul class="reason-list">
+              <li class="reason">
+                <h3 class="reason-header">Жилье</h3>
+                <p class="reason-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li class="reason">
+                <h3 class="reason-header">Еда</h3>
+                <p class="reason-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
+              </li>
+              <li class="reason">
+                <h3 class="reason-header">Сувениры</h3>
+                <p class="reason-text">Не только китайского, но и местного производства</p>
+              </li>
+            </ul>
+          </div>
+          <div class="item-container-right">
+            <li class="advantage-item white">
+              <h3 class="advantage-title">Там есть<br>
+                  мост дьявола</h3>
+              <span class="advantage-number">№2</span>
+              <p class="advantage-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </li>
-            <li class="reason">
-              <h3 class="reason-header">Сувениры</h3>
-              <p class="reason-text">Не только китайского, но и местного производства</p>
+          </div>
+          <div class="advantage-item-container">
+            <li class="advantage-item">
+              <h3 class="advantage-title">Небольшая площадь</h3>
+              <span class="advantage-number">№3</span>
+              <p class="advantage-text">Все достопримечательности находятся очень близко</p>
             </li>
-          </ul>
-          <li class="advantage-item white">
-            <h3 class="advantage-title">Там есть<br>
-              мост дьявола</h3>
-            <span class="advantage-number">№2</span>
-            <p class="advantage-text">Да, по нему можно пройти!Если конечно вы осмелитесь</p>
-          </li>
-          <li class="advantage-item">
-            <h3 class="advantage-title">Небольшая площадь</h3>
-            <span class="advantage-number">№3</span>
-            <p class="advantage-text">Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="advantage-item">
-            <h3 class="advantage-title">Красивая
-              дорога</h3>
-            <span class="advantage-number">№4</span>
-            <p class="advantage-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="advantage-item">
-            <h3 class="advantage-title">Мало
-              туристов</h3>
-            <span class="advantage-number">№5</span>
-            <p class="advantage-text">Большинство едет в гранд каньон и толпится там</p>
-          </li>
+            <li class="advantage-item">
+              <h3 class="advantage-title">Красивая
+                дорога</h3>
+              <span class="advantage-number">№4</span>
+              <p class="advantage-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="advantage-item">
+              <h3 class="advantage-title">Мало
+                туристов</h3>
+              <span class="advantage-number">№5</span>
+              <p class="advantage-text">Большинство едет в гранд каньон и толпится там</p>
+            </li>
+          </div>
         </ul>
       </section>
       
@@ -86,11 +99,15 @@
         </p>
         <button class="reservation-button" type="button">Поиск гостиницы в Седоне</button> 
         <form class="booking-form" action="#" method="GET">
-          <label class="booking-form-label"for="date">Дата заезда:</label>
-          <input class="booking-check-in-date" type="text" id="date" placeholder="24 апреля 2017">
-          <label class="booking-form-label" for="date">Дата выезда:</label>
-          <input class="booking-check-out-date" type="text" id="date" placeholder="4 июля 2017">
-          <div class="">
+          <div class="form-container-1">
+            <label class="booking-form-label"for="date">Дата заезда:</label>
+            <input class="booking-form-label booking-check-in-date" type="text" id="date" placeholder="24 апреля 2017">
+          </div>
+          <div>
+            <label class="booking-form-label" for="date">Дата выезда:</label>
+            <input class="booking-check-out-date" type="text" id="date" placeholder="4 июля 2017">
+          </div>
+          <div class="form-container-2">
             <label class="booking-form-label" for="number">Взрослые:</label>
             <input class="booking-adults-quantity" type="text" id="number" placeholder="0">
             <button class="booking-form-button" type="button">-</button> 
@@ -109,39 +126,41 @@
     </main>
 
       <footer class="footer">
-        <div class="footer-contacts">
-          <p class="footer-hashtag">
-            #visitsedona
-          </p>
-          <p class="footer-phone">
-            Тел: 
-            <a class="footer-phone-number" href="tel:+74956660266">+7(495) 666-02-66</a>
-          </p>
-        </div>
-        <ul class="social-item"> 
-          <li class="social">
-            <a class="social-link" href="#">
-              <img class="social-img" src="img/t-icon.svg" alt="Twitter">
-            </a> 
-          </li>
-          <li class="social">
-            <a class="social-link" href="#">
-              <img class="social-img" src="img/fb-icon.svg" alt="Facebook">
+        <div class="footer-container">
+          <div class="footer-contacts">
+            <p class="footer-hashtag">
+              #visitsedona
+            </p>
+            <p class="footer-phone">
+              Тел: 
+              <a class="footer-phone-number" href="tel:+74956660266">+7(495) 666-02-66</a>
+            </p>
+          </div>
+          <ul class="social-item"> 
+            <li class="social">
+              <a class="social-link" href="#">
+                <img class="social-img" src="img/t-icon.svg" alt="Twitter">
+              </a> 
+            </li>
+            <li class="social">
+              <a class="social-link" href="#">
+                <img class="social-img" src="img/fb-icon.svg" alt="Facebook">
+                </a>
+            </li>
+            <li class="social">
+              <a class="social-link" href="#">
+              <img class="social-img" src="img/youtube-icon.svg" alt="Youtube">
               </a>
-          </li>
-          <li class="social">
-            <a class="social-link" href="#">
-            <img class="social-img" src="img/youtube-icon.svg" alt="Youtube">
-            </a>
-          </li>
-        </ul>
-        <p class="developed-text">
-          website by: 
-        </p>
-        <div class="html-academy-img"> 
-          <a class="developed-link" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img class="html-academy-logo" src="img/footer-logo.svg" alt="HTML Academy">
-          </a> 
+            </li>
+          </ul>
+          <p class="developed-text">
+            website by: 
+          </p>
+          <div class="html-academy-img"> 
+            <a class="developed-link" href="https://htmlacademy.ru/intensive/htmlcss">
+              <img class="html-academy-logo" src="img/footer-logo.svg" alt="HTML Academy">
+            </a> 
+          </div>
         </div>
       </footer>
   </body>

@@ -9,7 +9,7 @@
         color: black;
         text-transform: uppercase;
 
-        background-color: #f2f2f2;
+        background-color: #ffffff;
         background-image: url("../img/background.jpg");
         background-size: 1200px 800px;
         margin-top: 45px;
@@ -30,13 +30,14 @@
         font-size: 14px;
         line-height: 26px;
         color: black;
-        /* background-color: #f2f2f2 1200px 56px; */
     }
 
     .site-navigation {
-        list-style: none;
         display: flex;
+        list-style: none;
         justify-content: space-around;
+        background-color:#f2f2f2;
+        margin-top: 0;
     }
 
     .site-navigation a {
@@ -54,6 +55,12 @@
     .site-navigation-link .active {
         color: #766357;
         text-align: 112px 22px; 
+    }
+
+    .index-logo {
+        position: static;
+        margin-left: 370px;
+        margin-top: 61px;
     }
 
     .hotels-data-criteria {
@@ -95,24 +102,88 @@
     }
 
     .sedona-about-info-text {
+        display: block;
         font-weight: bold;
         font-size: 21px;
         text-align: center;
+        width: 440px;
+        height: 48px;
+        margin-left: 380px;
+        margin-top: 61px;
+        background-color: #f2f2f2;
     }
 
     .sedona-about-reasons {
+        display: block;
         font-weight: normal;
         color: #333333;
         text-align: center;
+        width: 489px;
+        height: 13px;
+        margin-left: 355px;
+        margin-top: 38px;
+        background-color: #f2f2f2;
+    }
+
+    .item-container {
+        display: block;
+        width: 400px;
+        height: 256px;
+        background-color: #81b3d2;
+        margin-left: 0px;
     }
 
     .advantage-item.white {
+        display: block;
         color: white;
+        width: 280px;
+        height: 146px;
+        text-align: center; 
+        padding-left: 60px;
+        padding-top: 46px;
+    }
+
+    .item-container-right {
+        display: block;
+        width: 400px;
+        height: 256px;
+        background-color: #81b3d2;
+        margin-top: 10px;
+        margin-left: 700px;
     }
 
     .advantage-number,
     .advantage-text {
         font-weight: normal;
+    }
+
+    .advantage-item-container {
+        display: flex;
+        width: 1150px;
+        margin-top: 10px;
+        background-color: #eeeeee;
+    }
+
+    .advantage-item-container .advantage-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 133px;
+        text-align: center;
+    }
+
+    .reason-list {
+        display: flex;
+        width: 1100px;
+        margin-top: 10px;
+    }
+
+    .reason {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 133px;
+        text-align: center;
     }
 
     .reason-text,
@@ -150,6 +221,20 @@
         margin-top: 52px;
         background-color: #766357;
         border: none;
+    }
+
+    .form-container-1 {
+        padding-top: 55px;
+    }
+
+    .booking-form-label {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .form-container-2 {
+        margin-top: 20px;
     }
 
     .reservation-button:hover {
@@ -205,10 +290,19 @@
     } */
     
     /* .header-logo {
+        display: block;
         margin-left: 569px;
         margin-right: 571px;
         margin-top: 0;
-    } */
+    }
+ */
+
+    
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
 
     .footer-contacts {
         font-size: 21px;
