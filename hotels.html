@@ -12,123 +12,133 @@
     </head>
 
     <body>
-        <header class="main-header">
-            <nav class="main-navigation">
-              <a class="header-logo">
+      <div class="main-wrapper">
+          <header class="main-header">
+              <nav class="main-navigation">
+                <!--  <a class="header-logo">
                 <img src="img/header-logo.svg" width="100" height="150" alt="Логотип города Седона">
-              </a>
-              <ul class="site-navigation">
-                <li class="site-navigation-link"><a class="site-navigation-link" href="info.html">Информация</a></li>
-                <li class="site-navigation-link"><a class="site-navigation-link" href="#">Фото и видео</a></li>
-                <li class="site-navigation-link"><a class="site-navigation-link" href="#">Карта штата</a></li> 
-                <li class="site-navigation-link"><a class="site-navigation-link active" href="hotels.html">Гостиницы</a></li>
-              </ul>
-            </nav>
-          </header>
+                </a> -->
+                <ul class="site-navigation">
+                  <li class="site-navigation-item"><a class="site-navigation-link" href="info.html">Информация</a></li>
+                  <li class="site-navigation-item"><a class="site-navigation-link" href="#">Фото и видео</a></li>
+                  <li class="site-navigation-item"><a class="site-navigation-link" href="#">Карта штата</a></li>
+                  <li class="site-navigation-link"><a class="site-navigation-link active" href="hotels.html">Гостиницы</a></li>
+                </ul>
+              </nav>
+            </header>
 
-        <main>
-            <section>
-                <!-- секция, выделенная красным цветом -->
-            </section>
+          <main>
+              <section>
+                  <!-- секция, выделенная красным цветом -->
+              </section>
 
-            <section class="hotels-data">
-                <span class="search-result">найдено: 3</span>
-                <h3 class="sorting">сортировка:</h3>
-                <div class="hotels-data-criteria">
-                    <a class="hotels-data-price" href="#">по цене</a>
-                    <a class="hotels-data-type" href="#">по типу</a>
-                    <a class="hotels-data-rating" href="#">по рейтингу</a>
-                </div>
+              <section class="hotels-data">
+                  <div class="hotels-data-container">
+                    <span class="search-result">найдено: 3</span>
+                    <h3 class="sorting">сортировка:</h3>
+                    <div class="hotels-data-criteria">
+                        <a class="hotels-data-price" href="#">по цене</a>
+                        <a class="hotels-data-type" href="#">по типу</a>
+                        <a class="hotels-data-rating" href="#">по рейтингу</a>
+                    </div>
+                  </div>
 
-                <div class="hotels-data-result">
-                    <ul class="hotels-data-list">
-                        <li class="hotels-data">
-                            <div>
-                                <img class="hotel-img" src="img/hotel-1.jpg" alt="Amara Resort & Spa">
-                            </div> 
-                            <div>
-                                <h2 class="hotels-data-amara-title"><a class="hotels-data-link" href="#">amara resort & spa</a></h2> 
-                                <span class="hotel-type">гостиница</span>
-                                <span class="hotel-price">от 4000 Р.</span>
-                                <a class="hotel-information" href="#">подробнее</a>
-                                <a class="hotel-booking" href="#">забронировать</a>
-                            </div>
-                            <div>
-                                <span class="hotel-rating">рейтинг: 8,5</span> 
-                            </div>
-                        </li>
+                  <div class="hotels-data-result">
+                      <ul class="hotels-data-list">
+                          <li class="hotels-data">
+                                <div>
+                                    <img class="hotel-img" src="img/hotel-1.jpg" alt="Amara Resort & Spa">
+                                </div> 
+                                <div class="hotel-container">
+                                    <h2 class="hotels-data-title"><a class="hotels-data-link" href="#">amara resort & spa</a></h2> 
+                                    <span class="hotel-type">гостиница</span>
+                                    <span class="hotel-price">от 4000 Р.</span>
+                                    <div class="hotel-info">
+                                      <a class="hotel-information" href="#">подробнее</a>
+                                      <a class="hotel-booking" href="#">забронировать</a>
+                                    </div>
+                                </div>
+                              <div>
+                                  <span class="hotel-rating">рейтинг: 8,5</span> 
+                              </div>
+                          </li>
 
-                        <li class="hotels-data">
-                            <div>
-                                <img class="hotel-img" src="img/hotel-2.jpg" alt="Desert Quail Inn">
-                            </div>
-                            <div>
-                                <h2 class="hotels-data-desert-title" ><a class="hotels-data-link" href="#">desert quail inn</a></h2>
-                                <span class="hotel-type">мотель</span>
-                                <span class="hotel-price">от 3000 Р.</span>
-                                <a class="hotel-information" href="#">подробнее</a>
-                                <a class="hotel-booking" href="#">забронировать</a>
-                            </div>
-                            <div>
-                                <span class="hotel-rating">рейтинг: 8,9</span>
-                            </div>
-                        </li>
+                          <li class="hotels-data">
+                              <div>
+                                  <img class="hotel-img" src="img/hotel-2.jpg" alt="Desert Quail Inn">
+                              </div>
+                              <div class="hotel-container">
+                                  <h2 class="hotels-data-title" ><a class="hotels-data-link" href="#">desert quail inn</a></h2>
+                                  <span class="hotel-type">мотель</span>
+                                  <span class="hotel-price">от 3000 Р.</span>
+                                  <div class="hotel-info"></div>
+                                    <a class="hotel-information" href="#">подробнее</a>
+                                    <a class="hotel-booking" href="#">забронировать</a>
+                                  </div>
+                              </div>
+                              <div>
+                                  <span class="hotel-rating">рейтинг: 8,9</span>
+                              </div>
+                          </li>
 
-                        <li class="hotels-data">
-                            <div>
-                                <img class="hotel-img" src="img/hotel-3.jpg" alt="Villas At Poco Diablo">
-                            </div>
-                            <div>
-                                <h2 class="hotels-data-villas-title"><a class="hotels-data-link" href="#">villas at poco diablo</a></h2>
-                                <span class="hotel-type">апартаменты</span>
-                                <span class="hotel-price">от 2000 Р.</span>
-                                <a class="hotel-information" href="#">подробнее</a>
-                                <a class="hotel-booking" href="#">забронировать</a>
-                            </div>  
-                            <div>
-                                <span class="hotel-rating">рейтинг: 9,2</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </main>
+                          <li class="hotels-data">
+                              <div>
+                                  <img class="hotel-img" src="img/hotel-3.jpg" alt="Villas At Poco Diablo">
+                              </div>
+                              <div class="hotel-container">
+                                  <h2 class="hotels-data-title"><a class="hotels-data-link" href="#">villas at poco diablo</a></h2>
+                                  <span class="hotel-type">апартаменты</span>
+                                  <span class="hotel-price">от 2000 Р.</span>
+                                  <div class="hotel-info">
+                                    <a class="hotel-information" href="#">подробнее</a>
+                                    <a class="hotel-booking" href="#">забронировать</a>
+                                  </div>
+                              </div>  
+                              <div>
+                                  <span class="hotel-rating">рейтинг: 9,2</span>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </section>
+          </main>
 
-        <footer class="footer">
-            <div class="footer-contacts">
-              <p class="footer-hashtag">
-                #visitsedona
-              </p>
-              <p class="footer-phone">
-                Тел: 
-                <a class="footer-phone-number" href="tel:+74956660266">+7(495) 666-02-66</a>
-              </p>
-            </div>
-            <ul class="social-item"> 
-              <li class="social">
-                <a class="social-link" href="#">
-                  <img class="social-img" src="img/t-icon.svg" alt="Twitter">
-                </a> 
-              </li>
-              <li class="social">
-                <a class="social-link" href="#">
-                  <img class="social-img" src="img/fb-icon.svg" alt="Facebook">
+          <footer class="footer">
+              <div class="footer-contacts">
+                <p class="footer-hashtag">
+                  #visitsedona
+                </p>
+                <p class="footer-phone">
+                  Тел: 
+                  <a class="footer-phone-number" href="tel:+74956660266">+7(495) 666-02-66</a>
+                </p>
+              </div>
+              <ul class="social-item"> 
+                <li class="social">
+                  <a class="social-link" href="#">
+                    <img class="social-img" src="img/t-icon.svg" alt="Twitter">
+                  </a> 
+                </li>
+                <li class="social">
+                  <a class="social-link" href="#">
+                    <img class="social-img" src="img/fb-icon.svg" alt="Facebook">
+                    </a>
+                </li>
+                <li class="social">
+                  <a class="social-link" href="#">
+                  <img class="social-img" src="img/youtube-icon.svg" alt="Youtube">
                   </a>
-              </li>
-              <li class="social">
-                <a class="social-link" href="#">
-                <img class="social-img" src="img/youtube-icon.svg" alt="Youtube">
-                </a>
-              </li>
-            </ul>
-            <p class="developed-text">
-              website by: 
-            </p>
-            <div class="html-academy-img"> 
-              <a class="developed-link" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img class="html-academy-logo" src="img/footer-logo.svg" alt="HTML Academy">
-              </a> <!-- Не отображается логотип -->
-            </div>
-        </footer>
+                </li>
+              </ul>
+              <p class="developed-text">
+                website by: 
+              </p>
+              <div class="html-academy-img"> 
+                <a class="developed-link" href="https://htmlacademy.ru/intensive/htmlcss">
+                  <img class="html-academy-logo" src="img/footer-logo.svg" alt="HTML Academy">
+                </a> <!-- Не отображается логотип -->
+              </div>
+          </footer>
+        </div>
     </body>
 </html>
