@@ -1,298 +1,356 @@
-    body {
-        margin: 0;
-        padding: 0;
-    
-        font-family: "PT Sans", Arial, sans-serif;
-        font-size: 14px;
-        line-height: 26px;
-        font-weight: bold;
-        color: black;
-        text-transform: uppercase;
-        background-color: #f2f2f2;
-        
-        
-    }
+body {
+	margin: 0;
+	padding: 0;
+	width: 1200px;
+	margin: 0 auto;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	color: black;
+	text-transform: uppercase;
+	background-color: #f2f2f2;
+}
 
-    .main-wrapper {
-        width: 1200px;
-        margin: 0 auto;
-        background-color: white;
-    }
-    
-    .main {
-        background-image: url("../img/background.jpg");
-        background-size: 1200px 800px;
-        background-position: top center;
-        background-repeat: no-repeat;
-    }
+.main-wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: white;
+}
 
-    a {
-    text-decoration: none;
-    }
+.main {
+	background-image: url("../img/background.jpg");
+	background-size: 1200px 800px;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
 
-    .main-navigation {
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 26px;
-        color: black;
-    }
+a {
+	text-decoration: none;
+}
 
-    .site-navigation {
-        display: flex;
-        list-style: none;
-        justify-content: space-around;
-        background-color: #f2f2f2;
-        padding-left: 0;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin: 0;
-    }
+.main-navigation {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 26px;
+	color: black;
+}
 
-    .site-navigation a {
-        color: black;
-    }
+.site-navigation {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	justify-content: space-around;
+	padding-left: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: 0;
+	max-width: 1200px;
+	max-height: 56px;
+}
 
-    .site-navigation-link:hover {
-        color: #81b3d2;
-    }
+.site-navigation a {
+	color: black;
+}
 
-    .site-navigation-link:active {
-        color: rgba(0, 0, 0, 0.3);
-    }
+.site-navigation-link:hover {
+	color: #81b3d2;
+}
 
-    .site-navigation-link .active {
-        color: #766357;
-        text-align: 112px 22px; 
-    }
+.site-navigation-link:active {
+	color: rgba(0, 0, 0, 0.3);
+}
 
-    .index-logo {
-        padding: 130px 370px;
-        
-    }
+.site-navigation-link .active {
+	color: #766357;
+	text-align: 112px 22px;
+}
 
-    .hotels-data-criteria {
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 18px;
-    }
+.index-logo {
+	padding: 130px 370px;
+}
 
-    .hotels-data-price {
-        color: #81b3d2;
-    }
+.polygon {
+	margin-bottom: -10px;
+}
 
-    .hotels-data-type,
-    .hotels-data-rating {
-        color: rgba(0, 0, 0, 0.3);
-        border-bottom: dotted 1px #81b3d2; 
-    }
+.hotels-data-criteria {
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
+}
 
-    .hotels-data-type:hover,
-    .hotels-data-rating:hover {
-        color: #81b3d2;
-    }
+.hotels-data-price {
+	color: #81b3d2;
+}
 
-    .hotels-data-type:active,
-    .hotels-data-rating:active {
-        color: black;
-        border-bottom: none;
-    }
+.hotels-data-type,
+.hotels-data-rating {
+	color: rgba(0, 0, 0, 0.3);
+	border-bottom: dotted 1px #81b3d2;
+}
 
-   
+.hotels-data-type:hover,
+.hotels-data-rating:hover {
+	color: #81b3d2;
+}
+
+.hotels-data-type:active,
+.hotels-data-rating:active {
+	color: black;
+	border-bottom: none;
+}
+
+.sedona-about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.sedona-about-info-text {
+	display: block;
+	font-weight: bold;
+	font-size: 21px;
+	text-align: center;
+	width: 440px;
+	min-height: 48px;
+}
+
+.sedona-about-reasons {
+	display: block;
+	font-weight: normal;
+	color: #333333;
+	text-align: center;
+	width: 489px;
+	min-height: 13px;
+	margin: 0;
+}
+
+.item-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 400px;
+	height: 256px;
+	background-color: #81b3d2;
+	margin-left: 0px;
+}
+
+.advantage-item {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.advantage-image-1 {
+/* 	display: flex;
+	padding-left: 50px; */
+}
+
+.advantage-item.white {
+	display: block;
+	color: white;
+	text-align: center;
+}
+
+.item-container-right {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 256px;
+    background-color: #81b3d2;
+}
+
+.container-right {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	align-items: center;
+}
+
+.feature-2 {
+	display: flex;
+	width: 800px;
+	height: 256px;
+	
+}
+
+.advantage-number,
+.advantage-text {
+	font-weight: normal;
+	max-width: 283px;
+}
+
+.advantage-item-container {
+	display: flex;
+	min-height: 255px;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	background-color: #eeeeee;
+}
+
+.feature-1 {
+	display: flex;
+	margin-left: 400px;
+    margin-bottom: -256px;
+}
+
+.advantage-item.white {
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.advantage-item-container .advantage-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.reason-list {
+	display: flex;
+	width: 1200px;
+	padding: 0px;
+	background-color: white;
+}
+
+.reason {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	padding: 55px 95px;
+}
+
+.reservation-attention-title {
+	margin-top: 57px;
+}
+
+.reason-text,
+.reservation-text {
+	font-weight: normal;
+	margin-left: 0;
+}
+
+.developed-text {
+	font-weight: normal;
+}
+
+.reservation-attention-title {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 36px;
+	text-align: center;
+}
+
+.reservation-text {
+	line-height: 24px;
+	color: #333333;
+	text-align: center;
+}
+
+.reservation-button {
+	font-weight: bold;
+	font-size: 21px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	width: 568px;
+	height: 86px;
+	margin-left: 316px;
+	margin-top: 52px;
+	background-color: #766357;
+	border: none;
+}
+
+.form-container-1 {
+	display: flex;
+	padding-top: 55px;
+}
+
+.booking-form-label {
+	width: ;
+}
+
+.form-container-2 {
+	display: flex;
+}
+
+.form-container-3 {
+	display: flex;
+}
+
+.form-container-4 {
+	display: flex;
+}
+
+.form-container {
+	display: flex;
+	width: 150px;
+	margin-top: 30px;
+}
+
+.booking-form-label {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+}
+
+.form-container-2 {
+	margin-top: 20px;
+}
+
+.reservation-button:hover {
+	background-color: #604e43;
+}
+
+.reservation-button:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #503e33;
+}
+
+.booking-form-submit-button {
+	font-weight: bold;
+	font-size: 21px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	width: 458px;
+	height: 58px;
+	margin-left: 55px;
+	margin-right: 55px;
+	margin-top: 54px;
+	background-color: #81b3d2;
+	border: none;
+}
+
+.booking-form-submit-button:hover {
+	background-color: #669ec0;
+}
+
+.booking-form-submit-button:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #5496bd;
+}
+
+.booking-form {
+	background: white;
+	width: 568px;
+	height: 395px;
+	margin-left: 316px;
+}
 
 
-
-
-
-
-    .sedona-about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: white;
-    }
-
-    .sedona-about-info-text {
-        display: block;
-        font-weight: bold;
-        font-size: 21px;
-        text-align: center;
-        width: 440px;
-        min-height: 48px;
-        background-color: #f2f2f2;
-    }
-
-    .sedona-about-reasons {
-        display: block;
-        font-weight: normal;
-        color: #333333;
-        text-align: center;
-        width: 489px;
-        min-height: 13px;
-        background-color: #f2f2f2;
-        margin: 0;
-    }
-
-    .item-container {
-        display: block;
-        width: 400px;
-        min-height: 256px;
-        background-color: #81b3d2;
-        margin-left: 0px;
-    }
-
-    .advantage-item {
-        display: flex;
-        justify-content: space-around;
-        text-align: center; 
-        padding-left: 50px;
-        padding-top: 40px;
-    }
-
-
-    .advantage-item.white {
-        display: block;
-        color: white;
-        width: 280px;
-        height: 146px;
-        text-align: center; 
-        padding-left: 60px;
-        padding-top: 46px;
-    }
-
-    .item-container-right {
-        display: flex;
-        margin-left: 800px;
-        width: 400px;
-        min-height: 256px;
-        background-color: #81b3d2;
-    }
-
-    .advantage-number,
-    .advantage-text {
-        font-weight: normal;
-    }
-
-    .advantage-item-container {
-        display: flex;
-        background-color: #eeeeee;
-    }
-
-    .advantage-item-container .advantage-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        text-align: center;
-    }
-
-    .reason-list {
-        display: flex;
-        width: 1200px;
-        padding: 0px;
-        background-color: white;
-    }
-
-    .reason {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        text-align: center;
-        padding: 55px 95px;
-    }
-
-    .reason-text,
-    .reservation-text {
-        font-weight: normal;
-        margin-left: 0;
-    }
-
-    .developed-text {
-        font-weight: normal;
-    }
-
-    .reservation-attention-title {
-        font-weight: bold;
-        font-size: 30px;
-        line-height: 36px;
-        text-align: center;
-    }
-
-    .reservation-text {
-        line-height: 24px;
-        color: #333333;
-        text-align: center;
-    }
-
-    .reservation-button {
-        font-weight: bold;
-        font-size: 21px;
-        text-align: center;
-        text-transform: uppercase;
-        color: white;
-
-        width: 568px;
-        height: 86px;
-        margin-left: 316px;
-        margin-top: 52px;
-        background-color: #766357;
-        border: none;
-    }
-
-    .form-container-1 {
-        padding-top: 55px;
-    }
-
-    .booking-form-label {
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-    }
-
-    .form-container-2 {
-        margin-top: 20px;
-    }
-
-    .reservation-button:hover {
-        background-color: #604e43;
-    }
-
-    .reservation-button:active {
-        color: rgba(255, 255, 255, 0.3);
-        background-color: #503e33;
-    }
-
-    .booking-form-submit-button {
-        font-weight: bold;
-        font-size: 21px;
-        text-align: center;
-        text-transform: uppercase;
-        color: white;
-
-        width: 458px;
-        height: 58px;
-        margin-left: 55px;
-        margin-right: 55px;
-        margin-top: 54px;
-        background-color: #81b3d2;
-        border: none;
-    }
-
-    .booking-form-submit-button:hover {
-        background-color: #669ec0;
-    }
-
-    .booking-form-submit-button:active {
-        color: rgba(255, 255, 255, 0.3);
-        background-color: #5496bd;
-    }
-
-    .booking-form {
-        background: white;
-        width: 568px;
-        height: 395px;
-        margin-left: 316px;
-    }
-
-   /*  .field {
+/*  .field {
         border: none;
     }
 
@@ -302,215 +360,220 @@
         margin-left: 55px;
         margin-right: 322px;
     } */
-    
-    /* .header-logo {
-        display: block;
-        margin-left: 569px;
-        margin-right: 571px;
+
+
+.header-logo {
+		display: flex;
+		left: auto;
+		max-height: 70px;
         margin-top: 0;
     }
- */
-    
+ 
 
-    .footer-contacts {
-        font-size: 21px;
-    }
+.footer-contacts {
+	font-size: 21px;
+}
 
-    .social-item {
-        list-style: none;
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
+.social-item {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
 
-    .social {
-        background-color: #81b3d2; 
-        max-width: 46px; 
-        height: 48px;
-    }
+.social {
+	background-color: #81b3d2;
+	max-width: 46px;
+	height: 48px;
+}
 
-    .social-img {
-        width: 17;
-        height: 15;
-        object-fit: contain;
-    }
 
-    .developed-text {
-    }
+.social {
+	display: flex;
+    margin-right: 6px;
+    width: 46px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+}
 
-    .html-academy-logo {
-        width: 115px;
-        height: 41px;
-        object-fit: contain;
-        margin-right: 101px;
-    }
+.developed-text {}
 
-    .search-result {
-        font-size: 21px;
-    }
+.html-academy-logo {
+	width: 115px;
+	height: 41px;
+	object-fit: contain;
+	margin-right: 101px;
+}
 
-    .sorting {
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 18px;
-    }
+.search-result {
+	font-size: 21px;
+}
 
-    .site-navigation-link {
-        color:#766357; /* на странице отелей элемент должен быть другого цвета (цвет не поменялся) */
-    }
+.sorting {
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
+}
 
-    .hotels-data-list {
-        list-style: none;
-        padding-left: 65px;
-    }
+.site-navigation-link {
+	color: #766357;
+	/* на странице отелей элемент должен быть другого цвета (цвет не поменялся) */
+}
 
-    .hotels-data-link,
-    .hotels-data-link:visited{
-        color: black;
-    }
+.hotels-data-list {
+	list-style: none;
+	padding-left: 65px;
+}
 
-    .hotels-data-link:hover {
-        color: #81b3d2;
-    }
+.hotels-data-link,
+.hotels-data-link:visited {
+	color: black;
+}
 
-    .hotels-data-link:active {
-        color: rgba(0, 0, 0, 0.3);
-    }
+.hotels-data-link:hover {
+	color: #81b3d2;
+}
 
-    .hotel-type {
-        margin-right: 38px;
-    }
+.hotels-data-link:active {
+	color: rgba(0, 0, 0, 0.3);
+}
 
-    .hotel-type,
-    .hotel-price
-    {
-        font-weight: normal;
-        line-height: 21px;
-        color: #333333;
-    }
+.hotel-type {
+	margin-right: 38px;
+}
 
-    .hotel-information {
-        line-height: 21px;
-        color: white;
-        background-color: #81b3d2;
-        padding: 9px 17px;
-        margin-right: 10px;
-    }
+.hotel-type,
+.hotel-price {
+	font-weight: normal;
+	line-height: 21px;
+	color: #333333;
+}
 
-    .hotel-information:hover {
-        background-color: #669ec0;
-    }
+.hotel-information {
+	line-height: 21px;
+	color: white;
+	background-color: #81b3d2;
+	padding: 9px 17px;
+	margin-right: 10px;
+}
 
-    .hotel-information:active {
-        color: rgba(255, 255, 255, 0.3);
-        background-color: #5496bd;
-    }
+.hotel-information:hover {
+	background-color: #669ec0;
+}
 
-    .hotel-booking {
-        line-height: 21px;
-        color: white;
-        background-color: #766357;
-        padding: 9px 17px;
-    }
+.hotel-information:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #5496bd;
+}
 
-    .hotel-booking:hover {
-        background-color: #604e43;
-    }
+.hotel-booking {
+	line-height: 21px;
+	color: white;
+	background-color: #766357;
+	padding: 9px 17px;
+}
 
-    .hotel-booking:active {
-        color: rgba(255, 255, 255, 0.3);
-        background-color: #503e33;
-    }
+.hotel-booking:hover {
+	background-color: #604e43;
+}
 
-    .hotel-rating {
-        font-weight: normal;
-        line-height: 21px;
-        color: #666666;
-        background-color: #f2f2f2;
-    }
+.hotel-booking:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #503e33;
+}
 
-    .main-navigation {
-        outline: darkblue solid 3px;
-    }
+.hotel-rating {
+	font-weight: normal;
+	line-height: 21px;
+	color: #666666;
+	background-color: #f2f2f2;
+}
 
-    .sedona-about-info-text {
-        outline: blueviolet solid 3px;
-    }
+.main-navigation {
+	
+}
 
-    .main {
-        outline: aqua solid 3px;
-    }
+.sedona-about-info-text {
+	
+}
 
-    .sedona-about-reasons {
-        outline: crimson solid 3px;;
-    }
-   
-    .advantage-list {
-        list-style: none;
-        outline: darkgoldenrod solid 3px;
-        margin: 0;
-        padding-left: 0;
-        background-color: white;
-    }
+.main {
 
-    .reason-list {
-        list-style: none;
-        outline: lime solid 3px;
-        margin: 0;
-    }
+}
 
-    .reservation {
-        outline: fuchsia solid 3px;
-    }
+.sedona-about-reasons {
+	
+}
 
-    .booking-form {
-        outline: gold solid 3px;
-    }
+.advantage-list {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	background-color: white;
+}
 
-    footer {
-        outline: green solid 3px;
-        display: flex;
-        padding: 25px 40px;
-        justify-content: space-between;
-    }
+.reason-list {
+	list-style: none;
+	margin: 0;
+}
 
-    .hotels-data-container {
-        display: flex;
-        align-items: center;
-        padding-left: 70px;
-        min-height: 86px;
-    }
+.reservation {
 
-    .sorting {
-        display: flex;
-        padding-left: 50px;
-    }
+}
 
-    .hotel-container {
-        padding-left: 30px;
-    }
+.booking-form {
+	
+}
 
-    .hotels-data-criteria {
-        display: flex;
-        justify-content: space-between;
-        width: 240px;
-        padding-left: 30px;
-    }
+footer {
+	display: flex;
+	align-items: baseline;
+	padding: 25px 40px;
+	justify-content: space-between;
+}
 
-    li.hotels-data{
-        display: flex;
-    }
+.footer-phone-number {
+	color: black;
+}
 
-    hotels-data-title {
-        display: flex;
-        margin: 0;
-    }
+.hotels-data-container {
+	display: flex;
+	align-items: center;
+	padding-left: 70px;
+	min-height: 86px;
+}
 
-    .hotel-info {
-        display: flex;
-        justify-content: space-between;
-    }
+.sorting {
+	display: flex;
+	padding-left: 50px;
+}
 
-    h2 {
-        margin: 0;
-    }
+.hotel-container {
+	padding-left: 30px;
+}
+
+.hotels-data-criteria {
+	display: flex;
+	justify-content: space-between;
+	width: 240px;
+	padding-left: 30px;
+}
+
+li.hotels-data {
+	display: flex;
+}
+
+hotels-data-title {
+	display: flex;
+	margin: 0;
+}
+
+.hotel-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+h2 {
+	margin: 0;
+}
