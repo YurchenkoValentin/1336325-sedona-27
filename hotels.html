@@ -16,12 +16,10 @@
     <div class="main-wrapper">
         <header class="main-header">
             <nav class="main-navigation">
-                <!--  <a class="header-logo">
-                <img src="img/header-logo.svg" width="100" height="150" alt="Логотип города Седона">
-                </a> -->
                 <ul class="site-navigation">
                     <li class="site-navigation-item"><a class="site-navigation-link" href="info.html">Информация</a></li>
                     <li class="site-navigation-item"><a class="site-navigation-link" href="#">Фото и видео</a></li>
+                    <li class="header-logo"><img src="img/header-logo.svg" width="140" height="72" alt="Логотип города Седона"></li>
                     <li class="site-navigation-item"><a class="site-navigation-link" href="#">Карта штата</a></li>
                     <li class="site-navigation-link"><a class="site-navigation-link active" href="hotels.html">Гостиницы</a></li>
                 </ul>
@@ -29,8 +27,74 @@
         </header>
 
         <main>
-            <section>
-                <!-- секция, выделенная красным цветом -->
+            <section class="hotel-parameters">
+                <div class="parameter-container-1">
+                    <p class="parameter-name-1">инфраструктура:</p>
+                    <ul class="parameters-list">
+                        <li class="parameter">
+                            <label class="checkbox option" for="pool">
+                                <input class="check-input" type="checkbox" id="pool" checked>
+                                <span class="check-box"></span>
+                                бассейн
+                            </label>
+                        </li>
+                        <li class="parameter">
+                            <label class="checkbox option" for="parking">
+                                <input class="check-input" type="checkbox" id="parking">
+                                <span class="check-box"></span>
+                                парковка
+                            </label>
+                        </li>
+                        <li class="parameter">
+                            <label class="checkbox option" for="wifi">
+                                <input class="check-input" type="checkbox" id="wifi">
+                                <span class="check-box"></span>
+                                wi-fi
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="parameter-container-2">
+                    <p class="parameter-name-2">тип жилья:</p>
+                    <ul class="parameters-list">
+                        <li class="parameter">
+                            <label class="checkbox option" for="motel">
+                                <input class="check-input" type="checkbox" id="motel" checked>
+                                <span class="check-box"></span>
+                                гостиница
+                            </label>
+                        </li>
+                        <li class="parameter">
+                            <label class="checkbox option" for="hotel">
+                                <input class="check-input" type="checkbox" id="hotel" checked>
+                                <span class="check-box"></span>
+                                отель
+                            </label>
+                        </li>
+                        <li class="parameter">
+                            <label class="checkbox option" for="apartment">
+                                <input class="check-input" type="checkbox"  id="apartment" checked>
+                                <span class="check-box"></span>
+                                апартаменты
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-range">
+                    <div class="filter-range-title">Стоимость в сутки (р):</div>
+                    <div class="price-controls">
+                        <label class="min-price">от<input type="number" name="min-price" value="0"></label>
+                        <label for="max-price">до<input type="number" name="max-price" value="3000"></label>
+                    </div>
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div class="bar"></div>
+                        </div>
+                        <div class="range-toggle range-toggle-min"></div>
+                        <div class="range-toggle range-toggle-max"></div>
+                    </div>
+                    <button class="button-transparent" type="submit">Показать</button>
+                </div>
             </section>
 
             <section class="hotels-data">
@@ -102,43 +166,44 @@
             </section>
         </main>
 
-    <footer class="footer">
-        <div class="footer-contacts">
-            <p class="footer-hashtag">
-                #visitsedona
-            </p>
-            <p class="footer-phone">
-                Тел:
-                <a class="footer-phone-number" href="tel:+74956660266">+7(495) 666-02-66</a>
-            </p>
-        </div>
-        <ul class="social-item">
-            <li class="social">
-                <a class="social-link" href="#">
-                    <img class="social-img" src="img/t-icon.svg" alt="Twitter">
-                </a>
-            </li>
-            <li class="social">
-                <a class="social-link" href="#">
-                    <img class="social-img" src="img/fb-icon.svg" alt="Facebook">
-                </a>
-            </li>
-            <li class="social">
-                <a class="social-link" href="#">
-                    <img class="social-img" src="img/youtube-icon.svg" alt="Youtube">
-                </a>
-            </li>
-        </ul>
-        <p class="developed-text">
-            website by:
-        </p>
-        <div class="html-academy-img">
-            <a class="developed-link" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img class="html-academy-logo" src="img/footer-logo.svg" alt="HTML Academy">
-            </a>
-            <!-- Не отображается логотип -->
-        </div>
-    </footer>
+        <footer class="footer">
+            <div class="footer-contacts">
+                <p class="footer-hashtag">
+                    #visitsedona
+                </p>
+                <p class="footer-phone">
+                    Тел:
+                    <a class="footer-phone-number" href="tel:+74956660266">+7(495) 666-02-66</a>
+                </p>
+            </div>
+            <ul class="social-item">
+                <li class="social">
+                    <a class="social-link" href="#">
+                        <img class="social-img" src="img/t-icon.svg" alt="Twitter">
+                    </a>
+                </li>
+                <li class="social">
+                    <a class="social-link" href="#">
+                        <img class="social-img" src="img/fb-icon.svg" alt="Facebook">
+                    </a>
+                </li>
+                <li class="social">
+                    <a class="social-link" href="#">
+                        <img class="social-img" src="img/youtube-icon.svg" alt="Youtube">
+                    </a>
+                </li>
+            </ul>
+            <div class="html-academy">
+                <p class="developed-text">
+                    website by:
+                </p>
+                <div class="html-academy-img">
+                    <a class="developed-link" href="https://htmlacademy.ru/intensive/htmlcss">
+                        <img class="html-academy-logo" src="/img/logo_name.svg" alt="HTML Academy">
+                    </a>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 
