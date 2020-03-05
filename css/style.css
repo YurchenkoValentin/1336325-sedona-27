@@ -335,9 +335,6 @@ a {
 	padding-top: 55px;
 }
 
-.booking-form-label {
-	width: ;
-}
 
 .form-container-2 {
 	display: flex;
@@ -432,13 +429,16 @@ a {
 
 .header-logo {
 		position: absolute;
-		margin-left: 530px;
+		top: 38px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		/* margin-left: 530px;
 		top: -40px;
 		display: flex;
 		left: auto;
 		max-height: 70px;
         margin-top: 0;
-    }
+    } */
  
 
 .footer-contacts {
