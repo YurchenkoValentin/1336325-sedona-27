@@ -114,6 +114,30 @@ a {
 	border-bottom: none;
 }
 
+.icon-up-down {
+	display: flex;
+	justify-content: flex-end;
+    margin-left: 515px;
+}
+
+.icon-down {
+	fill: #81b3d2;
+}
+
+.icon-up {
+	fill: #cacaca;
+}
+
+.icon-up:hover,
+.icon-down:hover {
+	fill: black;
+}
+
+.icon-up:active,
+.icon-down:active {
+	fill: #81b3d2;
+}
+
 .sedona-about {
 	display: flex;
 	flex-direction: column;
@@ -189,8 +213,24 @@ a {
 	display: flex;
 	width: 800px;
 	height: 256px;
-	
 }
+
+.advantage-number {
+	overflow: hidden;
+}
+
+/* .advantage-number:before,
+.advantage-number:after {
+	content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 9px;
+    border: solid 1px #333333;
+    padding: 0;
+    margin-bottom: 3px;
+    margin-right: 4px;
+    margin-left: 3px;
+ }  */
 
 .advantage-number,
 .advantage-text {
@@ -206,6 +246,19 @@ a {
 .white .advantage-number {
 	color: white;
 }
+
+/* .white .advantage-number:before,
+.white .advantage-number:after {
+	content: "";
+	display: inline-block;
+    vertical-align: middle;
+    width: 9px;
+    border: solid 1px white;
+    padding: 0;
+    margin-bottom: 3px;
+    margin-right: 4px;
+    margin-left: 3px;
+} */
 
 .advantage-item-container {
 	display: flex;
@@ -250,7 +303,7 @@ a {
 	flex-direction: column;
 	justify-content: space-around;
 	text-align: center;
-	padding: 55px 95px;
+	padding: 55px 55px;
 }
 
 .reason-list .reason:first-child {
@@ -281,6 +334,10 @@ a {
 
 .reservation-attention-title {
 	margin-top: 57px;
+}
+
+.reason-text {
+	width: 284px;
 }
 
 .reason-text,
@@ -354,10 +411,31 @@ a {
 	margin-top: 30px;
 }
 
+.form-container
+.booking-quantity {
+	border: none;
+}
+
+.booking-quantity {
+	max-width: 38px;
+	text-align: center;
+	background-color: #f2f2f2;
+}
+
+.booking-form-button {
+	border: none;
+	background-color: #f2f2f2;
+}
+
+.booking-form-button:first-of-type {
+	margin-left: 40px;
+}
+
+
 .booking-form-label {
 	display: flex;
 	flex-direction: column;
-	margin-left: 20px;
+	padding-left: 57px;
 }
 
 .form-container-2 {
@@ -406,39 +484,77 @@ a {
 
 .icon-calendar {
 	border: none;
-    background-color: #f2f2f2;
+	background-color: #f2f2f2;
+}
+
+.calendar-svg {
+	fill: #cacaca;
+}
+
+.calendar-svg:hover {
+	fill: black;
+}
+
+.calendar-svg:active{
+	fill: #81b3d2;
 }
 
 .booking-check-in-date, 
 .booking-check-out-date {
+	margin-left: 17px;
+	min-width: 270px;
+	min-height: 38px;
 	border: none;
-    background-color: #f2f2f2;
+	background-color: #f2f2f2;
+	padding: 0;
 }
 
-/*  .field {
-        border: none;
-    }
+.booking-check-in-date {
+	margin-left: 21px;
+	padding-left: 13px;
+	color: black;
+}
 
-    .check-in {
-        font-weight: bold;
-        margin-top: 169px;
-        margin-left: 55px;
-        margin-right: 322px;
-    } */
+.booking-check-in-date:hover,
+.booking-check-out-date:hover {
+	background-color: #ebebeb;
+}
 
+.booking-check-in-date:focus,
+.booking-check-out-date:focus {
+	background-color: white;
+}
+
+.booking-check-out-date {
+	padding-left: 13px;
+}
+
+.booking-check-in-date:focus
+.booking-check-out-date:focus {
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5;
+}
+
+input::placeholder {
+	color: black;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.less,
+.more {
+	vertical-align: middle;
+}
 
 .header-logo {
 		position: absolute;
-		top: 38px;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		/* margin-left: 530px;
+		margin-left: 530px;
 		top: -40px;
 		display: flex;
 		left: auto;
 		max-height: 70px;
         margin-top: 0;
-    } */
+    }
  
 
 .footer-contacts {
@@ -452,10 +568,27 @@ a {
 	padding: 0;
 }
 
-.social {
+.social-link {
 	background-color: #81b3d2;
-	max-width: 46px;
+	width: 46px;
 	height: 48px;
+}
+
+.social-link:hover {
+	background-color: #669ec0;
+}
+
+.social-link:active {
+	background-color: #5496bd;
+}
+
+.social-img {
+	padding-left: 15px;
+    padding-top: 15px;
+}
+
+.social-img:active {
+	opacity: 0.3;
 }
 
 
@@ -468,7 +601,9 @@ a {
     justify-content: center;
 }
 
-.developed-text {}
+.developed-text {
+
+}
 
 .html-academy {
 	display: flex;
@@ -492,12 +627,11 @@ a {
 
 .site-navigation-link {
 	color: #766357;
-	/* на странице отелей элемент должен быть другого цвета (цвет не поменялся) */
 }
 
 .hotels-data-list {
 	list-style: none;
-	padding-left: 65px;
+	padding-left: 0;
 }
 
 .hotels-data-link,
@@ -557,6 +691,10 @@ a {
 	background-color: #503e33;
 }
 
+.icon-container {
+	
+}
+
 .hotel-rating {
 	margin-left: 522px;
 	padding: 8px;
@@ -566,9 +704,20 @@ a {
 	background-color: #f2f2f2;
 }
 
-.rating-container {
-	margin-top: 63px;
+.icon-rating-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+	
 }
+
+
+.rating-container::before {
+	background-image: url(/img/star.svg)
+}
+
+
 
 .main-navigation {
 	
@@ -620,8 +769,33 @@ a {
 	background-color: rgba(255, 255, 255, 0.9);
 }
 
+.footer-hotels {
+	width: 932px;
+	max-height: 52px;
+	display: flex;
+	align-items: center;
+	padding-left: 134px;
+	padding-right: 134px;
+	padding-top: 34px;
+	padding-bottom: 34px;
+	justify-content: space-between;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
 .footer-phone-number {
 	color: black;
+}
+
+.logo-name {
+	fill: black;
+}
+
+.logo-name:hover {
+	fill: #81b3d2;
+}
+
+.logo-name:active {
+	fill: #bdbbbc;
 }
 
 .hotels-data-container {
@@ -629,6 +803,8 @@ a {
 	align-items: center;
 	padding-left: 70px;
 	min-height: 86px;
+	border-bottom: 1px solid rgba(61, 36, 36, 0.1);
+	margin-bottom: -10px;
 }
 
 .sorting {
@@ -649,11 +825,20 @@ a {
 
 li.hotels-data {
 	display: flex;
+	border-bottom: 1px solid rgba(61, 36, 36, 0.1);
+	padding-left: 0;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	margin-top: 0;
 }
 
-hotels-data-title {
+.hotels-data-title {
 	display: flex;
 	margin: 0;
+}
+
+.hotel-img {
+	padding-left: 71px;
 }
 
 .hotel-info {
@@ -690,15 +875,17 @@ h2 {
 }
 
 .parameter-name-2 {
-	margin-left: 115px;
+	margin-left: 67px;
 }
 
 .parameters-list {
 	list-style-type: none;
+	margin-right: 95px;
 }
 
 .parameter {
 	padding-left: 70px;
+	margin-bottom: 20px;
 }
 
 .check-input {
@@ -706,35 +893,32 @@ h2 {
 	-moz-appearance: none;
 }
 
-/* .check-box {
-	background-image: url(/img/checkbox-off.svg);
-	background-repeat: no-repeat;
-	width: 20px;
-	height: 20px;
-} */
+.checkbox {
+	font-weight: normal;
+} 
 
 
 .check-input {
 	position: absolute;
-	margin-left: -20px;
-	width: 10px;
-	height: 10px;
+	margin-left: -40px;
+	width: 27px;
+	height: 23px;
 	background-image: url(/img/checkbox-off.svg);
+	background-repeat: no-repeat;
 }
 
 .check-input:checked{
 	position: absolute;
-	margin-left: -20px;
-	width: 10px;
-	height: 10px;
+	margin-left: -40px;
+	width: 27px;
+	height: 23px;
 	background-image: url(/img/checkbox-on.svg); 
-
+}
 
 .filter-range {
-	margin-left: 350px;
+	margin-left: 235px;
     margin-top: 31px;
 	width: 315px;
-	/* height: 155px; */
 }
 
 .filter-range-title {
