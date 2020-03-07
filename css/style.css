@@ -483,12 +483,17 @@ a {
 }
 
 .icon-calendar {
+	position: absolute;
 	border: none;
-	background-color: #f2f2f2;
+	background-color: inherit;
 }
 
 .calendar-svg {
+	position: absolute;
 	fill: #cacaca;
+    top: 63px;
+    right: 410px;
+    fill: #cacaca;
 }
 
 .calendar-svg:hover {
@@ -502,7 +507,7 @@ a {
 .booking-check-in-date, 
 .booking-check-out-date {
 	margin-left: 17px;
-	min-width: 270px;
+	min-width: 307px;
 	min-height: 38px;
 	border: none;
 	background-color: #f2f2f2;
