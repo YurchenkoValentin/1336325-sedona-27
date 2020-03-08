@@ -491,8 +491,8 @@ a {
 .calendar-svg {
 	position: absolute;
 	fill: #cacaca;
-    top: 63px;
-    right: 410px;
+	left: 455px;
+    top: 7px;
     fill: #cacaca;
 }
 
@@ -592,10 +592,9 @@ input::placeholder {
     padding-top: 15px;
 }
 
-.social-img:active {
+ .social-img:active {
 	opacity: 0.3;
-}
-
+ } 
 
 .social {
 	display: flex;
@@ -603,7 +602,7 @@ input::placeholder {
     width: 46px;
     height: 48px;
     align-items: center;
-    justify-content: center;
+	justify-content: center;
 }
 
 .developed-text {
