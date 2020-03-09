@@ -1068,4 +1068,6 @@ h2 {
 	background: #ffffff;
   }
 
- 
+ .form-hide {
+	 display: none;
+ }
