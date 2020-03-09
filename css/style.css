@@ -10,6 +10,7 @@ body {
 	color: black;
 	text-transform: uppercase;
 	background-color: #f2f2f2;
+	box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .main-wrapper {
@@ -18,9 +19,10 @@ body {
 	background-color: white;
 }
 
-.main {
-	background-image: url("../img/background.jpg");
-	background-size: 1200px 800px;
+
+.background-wrapper {
+	background-image: url(../img/background.jpg);
+	background-size: 1200px 800px;		
 	background-position: top center;
 	background-repeat: no-repeat;
 }
@@ -77,9 +79,9 @@ a {
 }
 
 
-.index-logo {
+.index-logo {	
 	padding: 130px 370px;
-	margin-bottom: -2px;
+	margin-bottom: -2px; 
 	background-image: url(../img/polygon.svg);
 	background-repeat: no-repeat;
 	background-position: bottom;
@@ -317,21 +319,21 @@ a {
 }
 
 .reason-list .reason:first-child {
-	background-image: url(/img/icon-house.svg); 
+	background-image: url(../img/icon-house.svg); 
 	background-repeat: no-repeat;
 	background-position: top center;
 	margin-top: 50px;
 }
 
 .reason-list .reason:nth-child(2) {
-	background-image: url(/img/icon-food.svg); 
+	background-image: url(../img/icon-food.svg); 
 	background-repeat: no-repeat;
 	background-position: top center;
 	margin-top: 50px;
 }
 
 .reason-list .reason:last-child {
-	background-image: url(/img/icon-gift.svg); 
+	background-image: url(../img/icon-gift.svg); 
 	background-repeat: no-repeat;
 	background-position: top center;
 	margin-top: 50px;
@@ -407,13 +409,13 @@ a {
 	display: flex;
 }
 
-.form-container-3 {
-	display: flex;
-}
-
+.form-container-3,
 .form-container-4 {
 	display: flex;
 }
+
+
+
 
 .form-container {
 	display: flex;
@@ -427,23 +429,31 @@ a {
 }
 
 .booking-quantity {
-	max-width: 38px;
+	width: 38px;
 	text-align: center;
 	background-color: #f2f2f2;
+	outline: none;
 }
 
 .booking-form-button {
+	width: 38px;
+	height: 38px;
 	border: none;
 	background-color: #f2f2f2;
 }
 
 .booking-form-button:first-of-type {
-	margin-left: 40px;
+	margin-left: 34px;
+}
+
+.form-container-4 .booking-form-button:first-of-type{
+	margin-left: 20px;
 }
 
 
 .booking-form-label {
 	display: flex;
+	justify-content: center;
 	flex-direction: column;
 	padding-left: 57px;
 }
@@ -501,7 +511,7 @@ a {
 .calendar-svg {
 	position: absolute;
 	fill: #cacaca;
-	left: 455px;
+	left: 474px;
     top: 7px;
     fill: #cacaca;
 }
@@ -517,7 +527,7 @@ a {
 .booking-check-in-date, 
 .booking-check-out-date {
 	margin-left: 17px;
-	min-width: 307px;
+	min-width: 329px;
 	min-height: 38px;
 	border: none;
 	background-color: #f2f2f2;
@@ -546,11 +556,6 @@ a {
 	padding-left: 13px;
 }
 
-.booking-check-in-date:focus
-.booking-check-out-date:focus {
-	background-color: #ffffff;
-	border: 2px solid #e5e5e5;
-}
 
 input::placeholder {
 	color: black;
@@ -596,6 +601,11 @@ li.social:active {
 	background-color: #5496bd;
 }
 
+.social-img {
+	padding-left: 15px;
+    padding-top: 15px;
+}
+
  .social-img:active {
 	opacity: 0.3;
  } 
@@ -604,8 +614,6 @@ li.social:active {
 	position: relative;
 	display: flex;
     margin-right: 6px;
-  
-	
     align-items: center;
 	justify-content: center;
 }
@@ -615,6 +623,11 @@ li.social {
 	align-items: center;
     justify-content: center;
 	background-color: #81b3d2;
+	width: 46px;
+	height: 48px;
+}
+
+a.social-link {
 	width: 46px;
 	height: 48px;
 }
