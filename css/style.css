@@ -23,8 +23,9 @@ body {
 .background-wrapper {
 	background-image: url(../img/background.jpg);
 	background-size: 1200px 800px;		
-	background-position: top center;
+	background-position: bottom center;
 	background-repeat: no-repeat;
+	background-position-y: -64px;
 }
 
 a {
@@ -48,6 +49,10 @@ a {
 	max-width: 1200px;
 	max-height: 56px;
 	line-height: 56px;
+}
+
+a.site-navigation-link:first-of-type {
+	margin-left: -22px;
 }
 
 
@@ -80,11 +85,17 @@ a {
 
 
 .index-logo {	
+	height: 245px;
 	padding: 130px 370px;
 	margin-bottom: -2px; 
 	background-image: url(../img/polygon.svg);
 	background-repeat: no-repeat;
 	background-position: bottom;
+}
+
+.index-logo-img {
+	position: relative;
+    bottom: 55px;
 }
 
 .polygon {
@@ -155,7 +166,7 @@ a {
 	flex-direction: column;
 	align-items: center;
 	background-color: white;
-	padding-top: 60px;
+	padding-top: 48px;
 	padding-bottom: 60px;
 }
 
@@ -166,6 +177,7 @@ a {
 	text-align: center;
 	width: 440px;
 	min-height: 48px;
+	margin-right: 12px;
 }
 
 .sedona-about-reasons {
@@ -175,7 +187,8 @@ a {
 	text-align: center;
 	width: 489px;
 	min-height: 13px;
-	margin: 0;
+	margin-top: 5px;
+    margin-right: 9px;
 }
 
 .item-container {
@@ -189,6 +202,17 @@ a {
 	margin-left: 0px;
 }
 
+.advantage-title {
+	width: 120px;
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.item-container .advantage-title {
+	width: 130px;
+	margin-top: 8px;
+}
+
 .advantage-item {
 	display: flex;
 	justify-content: space-around;
@@ -200,13 +224,9 @@ a {
 	padding-left: 50px; */
 }
 
-.advantage-item.white {
-	display: block;
-	color: white;
-	text-align: center;
-}
-
 .item-container-right {
+	position: relative;
+    top: 37px;
 	display: flex;
     justify-content: space-between;
     align-items: center;
@@ -219,6 +239,14 @@ a {
 	flex-direction: column;
 	width: 400px;
 	align-items: center;
+}
+
+.container-right .advantage-title {
+	width: 155px;
+}
+
+.container-right.advantage-text {
+	padding-left: 8px;
 }
 
 .feature-2 {
@@ -247,12 +275,13 @@ a {
 .advantage-number,
 .advantage-text {
 	font-weight: normal;
-	max-width: 283px;
+	max-width: 305px;
 	color: #333333;
 }
 
 .white .advantage-text  {
 	color: white;
+	padding-bottom: 8px;
 }
 
 .white .advantage-number {
@@ -291,9 +320,11 @@ a {
 .advantage-item.white {
     display: block;
     color: white;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+	text-align: center;
+	margin-bottom: 0;
+    margin-left: 0;
+	padding-left: 0;
+	margin-top: -24px;
 }
 
 .advantage-item-container .advantage-item {
@@ -323,6 +354,8 @@ a {
 	background-repeat: no-repeat;
 	background-position: top center;
 	margin-top: 50px;
+	background-position-x: 164px;
+    background-position-y: 8px;
 }
 
 .reason-list .reason:nth-child(2) {
@@ -330,6 +363,8 @@ a {
 	background-repeat: no-repeat;
 	background-position: top center;
 	margin-top: 50px;
+	background-position-x: 166px;
+    background-position-y: 8px;
 }
 
 .reason-list .reason:last-child {
@@ -337,12 +372,23 @@ a {
 	background-repeat: no-repeat;
 	background-position: top center;
 	margin-top: 50px;
+	background-position-x: 170px;
+    background-position-y: 3px;
 }
 
 .reason-header {
+	font-size: 21px;
 	padding-top: 15px;
+	padding-top: 32px;
+    padding-left: 5px;
 	margin-bottom: 0;
 }
+
+.reason-list:nth-child(2) .reason:nth-child(2) .reason-text {
+	padding-left: 5px;
+    padding-right: 4px;
+}
+
 
 .reservation-attention-title {
 	margin-top: 57px;
@@ -350,6 +396,9 @@ a {
 
 .reason-text {
 	width: 284px;
+	line-height: 21px;
+	padding-top: 7px;
+    padding-left: 3px;
 }
 
 .reason-text,
@@ -1070,4 +1119,5 @@ h2 {
 
  .form-hide {
 	 display: none;
+	
  }
