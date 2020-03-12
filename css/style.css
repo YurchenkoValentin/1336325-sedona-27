@@ -112,6 +112,12 @@ a {
 }
 
 .hotels-data-criteria {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 240px;
+	padding-left: 39px;
+	margin-top: 5px;
 	font-weight: normal;
 	font-size: 12px;
 	line-height: 18px;
@@ -141,7 +147,12 @@ a {
 .icon-up-down {
 	display: flex;
 	justify-content: flex-end;
-    margin-left: 515px;
+	margin-left: 504px;
+    margin-top: 4px;
+}
+
+.icon-up-link {
+	padding-right: 11px;
 }
 
 .icon-down {
@@ -714,6 +725,10 @@ a.social-link {
 	padding-left: 0;
 }
 
+.hotels-data-link {
+	padding-bottom: 6px;
+}
+
 .hotels-data-link,
 .hotels-data-link:visited {
 	color: black;
@@ -738,12 +753,27 @@ a.social-link {
 	color: #333333;
 }
 
+.hotel {
+	margin-right: 35px;
+}
+
+.apartments {
+	margin-right: 18px;
+}
+
+.hotel-info {
+	padding-top: 8px;
+}
+
 .hotel-information {
+	width: 110px;
+	height: 23px;
 	line-height: 21px;
 	color: white;
 	background-color: #81b3d2;
-	padding: 9px 17px;
-	margin-right: 10px;
+	margin-right: 6px;
+	padding-top: 4px;
+	text-align: center;
 }
 
 .hotel-information:hover {
@@ -756,10 +786,13 @@ a.social-link {
 }
 
 .hotel-booking {
+	text-align: center;
+	width: 142px;
+	height: 24px;
 	line-height: 21px;
 	color: white;
 	background-color: #766357;
-	padding: 9px 17px;
+	padding-top: 4px;
 }
 
 .hotel-booking:hover {
@@ -772,12 +805,14 @@ a.social-link {
 }
 
 .icon-container {
-	
+	margin-right: 3px;
+    margin-top: 2px;
 }
+
 
 .hotel-rating {
 	margin-left: 522px;
-	padding: 8px;
+	padding: 7px 14px;
 	font-weight: normal;
 	line-height: 21px;
 	color: #666666;
@@ -790,6 +825,11 @@ a.social-link {
 	justify-content: space-between;
 	align-items: flex-end;
 	
+}
+
+.rating-container {
+	height: 27px;
+    margin-bottom: 6px;
 }
 
 
@@ -848,21 +888,21 @@ a.social-link {
 }
 
 .footer-hotels {
-	width: 932px;
-	max-height: 52px;
-	display: flex;
-	align-items: center;
-	padding-left: 134px;
-	padding-right: 134px;
-	padding-top: 34px;
-	padding-bottom: 34px;
-	justify-content: space-between;
-	background-color: rgba(255, 255, 255, 0.9);
-}
+		max-height: 52px;
+		display: flex;
+		align-items: center;
+		padding-left: 63px;
+		padding-right: 64px;
+		padding-top: 22px;
+		padding-bottom: 34px;
+		justify-content: space-between;
+		background-color: rgba(255, 255, 255, 0.9);
+	}
+
 
 .footer-hashtag {
-	margin-bottom: 0;
-	padding-top: 22px;
+	margin-bottom: 0px;
+    margin-top: 46px;
 }
 
 .footer-phone {
@@ -903,22 +943,15 @@ a.social-link {
 }
 
 .hotel-container {
-	padding-left: 30px;
-}
-
-.hotels-data-criteria {
-	display: flex;
-	justify-content: space-between;
-	width: 240px;
-	padding-left: 30px;
+	padding-left: 32px;
 }
 
 li.hotels-data {
 	display: flex;
 	border-bottom: 1px solid rgba(61, 36, 36, 0.1);
 	padding-left: 0;
-	padding-bottom: 30px;
-	padding-top: 30px;
+	padding-bottom: 26px;
+	padding-top: 23px;
 	margin-top: 0;
 }
 
@@ -962,15 +995,23 @@ h2 {
 
 .parameter-name-1 {
 	margin-left: 72px;
+	font-size: 16px;
+	line-height: 21px;
+	margin-top: 30px;
 }
 
 .parameter-name-2 {
-	margin-left: 67px;
+	margin-left: 69px;
+	margin-top: 29px;
+	font-size: 16px;
+	line-height: 21px;
 }
 
 .parameters-list {
 	list-style-type: none;
-	margin-right: 95px;
+	margin-right: 77px;
+	padding-left: 42px;
+	margin-top: 6px;
 }
 
 .parameter {
@@ -1006,9 +1047,9 @@ h2 {
 }
 
 .filter-range {
-	margin-left: 235px;
-    margin-top: 31px;
-	width: 315px;
+	margin-left: 272px;
+    margin-top: 27px;
+    width: 315px;
 }
 
 .filter-range-title {
@@ -1023,7 +1064,7 @@ h2 {
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 21px;
-	height: 36px;
+	height: 34px;
 	margin-bottom: 20px;
 	border: 2px solid #FFFFFF;
 	border-radius: 2px;
@@ -1044,7 +1085,7 @@ h2 {
 
 .price-controls label {
 	display: inline-block;
-	padding-left: 52px;
+	padding-left: 57px;
 	font-size: 14px;
 	line-height: 32px;
 	vertical-align: top;
@@ -1054,7 +1095,7 @@ h2 {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-left: 65px;
+  padding-left: 63px;
 }
 
 .price-controls input {
@@ -1109,7 +1150,7 @@ h2 {
 
   .button-transparent {
 	display: block;
-	margin: 0 auto;
+	margin-left: 82px;
 	padding: 6px 35px;
 	font-size: 14px;
 	line-height: 20px;
