@@ -17,10 +17,10 @@
                      <img src="img/header-logo.svg" width="140" height="150" alt="Логотип города Седона">
                 </a>
                 <ul class="site-navigation">
-                    <li class="site-navigation-item"><a class="site-navigation-link" href="info.html">Информация</a></li>
-                    <li class="site-navigation-item"><a class="site-navigation-link" href="#">Фото и видео</a></li>
-                    <li class="site-navigation-item"><a class="site-navigation-link" href="#">Карта штата</a></li>
-                    <li class="site-navigation-item"><a class="site-navigation-link" href="hotels.html">Гостиницы</a></li>
+                    <li class="site-navigation-item site-navigation-information"><a class="site-navigation-link" href="info.html">Информация</a></li>
+                    <li class="site-navigation-item site-navigation-photo"><a class="site-navigation-link" href="#">Фото и видео</a></li>
+                    <li class="site-navigation-item site-navigation-map"><a class="site-navigation-link" href="#">Карта штата</a></li>
+                    <li class="site-navigation-item site-navigation-hotels"><a class="site-navigation-link" href="hotels.html">Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
@@ -101,7 +101,7 @@
                 <button class="reservation-button" type="button">Поиск гостиницы в Седоне</button>
                 <div class="map">
 
-                    <form class="booking-form" action="#" method="POST">
+                    <form class="booking-form form-hide" action="#" method="POST">
                         <div class="form-container-1">
                             <label class="booking-form-label" for="check-in-date">Дата заезда:</label>
                             <input class="booking-check-in-date" type="text" id="check-in-date" name="check-in-date" placeholder="24 апреля 2017">
@@ -166,7 +166,8 @@
                                 <div class="form-container-4">
                                     <label class="booking-form-label" for="children-number">Дети:</label>
                                     <button class="booking-form-button" type="button">
-                                        <img class="less" src="img/less.png" alt="#"  width="12" height="3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="3" viewBox="0 0 12 3" fill="black">
+                                        </svg>
                                     </button>
                                     <input class="booking-quantity" type="text" id="children-number" name="children" placeholder="0">
                                     <button class="booking-form-button" type="button">
