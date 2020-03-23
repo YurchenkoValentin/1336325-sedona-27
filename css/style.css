@@ -122,11 +122,10 @@ a {
 	display: flex;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
-	justify-content: space-between;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	width: 240px;
+	width: 540px;
 	padding-left: 39px;
 	margin-top: 5px;
 	font-weight: normal;
@@ -142,6 +141,7 @@ a {
 .hotels-data-rating {
 	color: rgba(0, 0, 0, 0.3);
 	border-bottom: dotted 1px #81b3d2;
+	margin-left: 33px;
 }
 
 .hotels-data-type:hover,
@@ -162,7 +162,7 @@ a {
 	-webkit-box-pack: end;
 	-ms-flex-pack: end;
 	justify-content: flex-end;
-	margin-left: 504px;
+	margin-left: 203px;
 	margin-top: 4px;
 }
 
@@ -409,7 +409,6 @@ a {
 	-ms-flex-direction: column;
 	flex-direction: column;
 	-ms-flex-pack: distribute;
-	justify-content: space-around;
 	text-align: center;
 	padding: 55px 55px;
 }
@@ -513,6 +512,10 @@ a {
 	height: 584px;
 	position: relative;
 	margin-bottom: -112px;
+}
+
+.map-google {
+	z-index: 1;
 }
 
 .form-container-1 {
@@ -770,10 +773,12 @@ a {
 }
 
 .booking-form {
+	position: absolute;
 	background: white;
 	width: 568px;
 	height: 395px;
-	margin-left: 50%;
+	margin-left: 600px;
+	z-index: 2;
 	-webkit-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	transform: translateX(-50%);
@@ -813,6 +818,7 @@ a {
 }
 
 .form-show {
+	position: absolute;
 	display: block;
 	-webkit-animation: bounce 0.6s;
 	animation: bounce 0.6s;
@@ -1015,23 +1021,25 @@ a {
 
 .footer-contacts {
 	font-size: 21px;
-	padding-left: 71px;
+	margin-left: 54px;
+    
 }
 
 .social-item {
-	list-style: none;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	width: 156px;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	margin-right: 62px;
-	margin-bottom: 18px;
-	padding-left: 39px;
+    width: 438px;
+    justify-content: center;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: center;
+    margin-bottom: 18px;
+	margin-right: 45px;
+	padding-left: 30px;
 }
 
 .social:hover {
@@ -1045,6 +1053,19 @@ a {
 .social-img {
 	padding-left: 15px;
 	padding-top: 12px;
+}
+
+.social-img.twitter {
+	padding-top: 16px;
+}
+
+.social-img.facebook {
+	padding-left: 17px;
+}
+
+.social-img.youtube {
+	padding-left: 13px;
+    padding-top: 15px;
 }
 
 .social-img:active {
@@ -1093,7 +1114,8 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	padding-right: 27px;
+	padding-right: 14px;
+	padding-left: 0;
 }
 
 .html-academy-logo {
@@ -1207,7 +1229,6 @@ a {
 }
 
 .hotel-rating {
-	margin-left: 522px;
 	padding: 7px 14px;
 	font-weight: normal;
 	line-height: 21px;
@@ -1216,6 +1237,8 @@ a {
 }
 
 .icon-rating-container {
+	min-width: 140px;
+    margin-left: 150px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1265,7 +1288,7 @@ a {
 	padding-top: 34px;
 	padding-bottom: 34px;
 	-ms-flex-pack: distribute;
-	justify-content: space-around;
+	justify-content: center;
 	background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -1336,6 +1359,7 @@ a {
 
 .hotel-container {
 	padding-left: 32px;
+	min-width: 600px;
 }
 
 li.hotels-data {
@@ -1366,7 +1390,6 @@ li.hotels-data {
 	display: flex;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
-	justify-content: space-between;
 }
 
 .hotel-parameters {
@@ -1378,7 +1401,7 @@ li.hotels-data {
 	background-color: #579ed9;
 	background-repeat: no-repeat;
 	width: 1200px;
-	height: 217px;
+	min-height: 215px;
 	background-position: center center;
 }
 
@@ -1421,6 +1444,7 @@ li.hotels-data {
 	margin-right: 77px;
 	padding-left: 42px;
 	margin-top: 6px;
+	margin-bottom: 0;
 }
 
 .parameter {
